@@ -595,3 +595,12 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.page_content{
+  margin: 0 auto;
+  max-width: 960px;
+  min-height: 100vh;
+  padding: 4rem;
+  border-left: 1px solid #bebebeaa;
+  border-right: 1px solid #bebebeaa;
+}

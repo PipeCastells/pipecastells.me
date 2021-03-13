@@ -12,7 +12,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     {
@@ -34,7 +34,7 @@ module.exports = {
         background_color: `#ef9885`,
         theme_color: `#ef9885`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/assets/images/icon.png`,
       },
     },
     `gatsby-plugin-typescript`,

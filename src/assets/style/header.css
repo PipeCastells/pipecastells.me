@@ -1,0 +1,54 @@
+header {
+  overflow: hidden;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: .5rem;
+  width: 100%;
+}
+
+header .title {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: .65rem;
+  white-space: nowrap;
+  margin-bottom: 0.5rem;
+}
+
+header .title p {
+  margin: 0;
+  font-family: "Roboto",Arial, Helvetica, sans-serif;
+}
+
+header .title p:last-child {
+  font-family: "Roboto Bold",Arial, Helvetica, sans-serif;
+}
+
+header .tag {
+  text-align: center;
+  margin: 0;
+  text-align: center;
+  float: none;
+  font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+}
+
+header .tag p {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0.65rem;
+  white-space: nowrap;
+}
+
+header .tag p:first-child {
+  font-weight: bold;
+}
+/*# sourceMappingURL=header.css.map */

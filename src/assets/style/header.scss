@@ -1,0 +1,43 @@
+@import "./vars";
+header{
+    overflow: hidden;
+    justify-content: space-around;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: .5rem;
+    width:100%;
+
+    .title{
+        text-align: center;
+        font-size: $mobile-title;
+        letter-spacing: .65rem;
+        white-space: nowrap;
+        margin-bottom: 0.5rem;
+        p{
+            margin:0;
+            font-family: "Roboto",Arial, Helvetica, sans-serif;
+            &:last-child{
+                font-family: "Roboto Bold",Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+    .tag{
+        text-align: center;
+        
+        margin:0;
+        text-align: center;
+        float:none;
+        font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+        p{
+            margin:0 !important;
+            padding:0 !important;
+            font-size: $mobile-subtitle;
+            white-space: nowrap;
+            &:first-child{
+                font-weight: bold;
+            }
+        }
+    }
+}
