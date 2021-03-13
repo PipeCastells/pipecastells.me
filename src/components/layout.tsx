@@ -1,28 +1,18 @@
-import React,{ReactNode} from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React, { ReactNode } from "react"
 
 import Header from "./header"
-import "./layout.css"
+import "../assets/style/gatsby_layout.css"
 import "../assets/style/layout.css"
 
-interface Props{
-  children:ReactNode
+interface Props {
+  children: ReactNode
 }
 
-const Layout = ({ children }:Props) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+const Layout = ({ children }: Props) => {
   return (
     <>
       <div className="layout">
+        <Header />
         <main>{children}</main>
       </div>
     </>

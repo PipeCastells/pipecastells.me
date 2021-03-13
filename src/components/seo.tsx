@@ -10,7 +10,7 @@ interface Props {
   title?: string,
 }
 
-function SEO({ description, lang, meta, title }:Props ) {
+function SEO({ description, lang, meta, title }: Props) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -23,7 +23,7 @@ function SEO({ description, lang, meta, title }:Props ) {
         }
       }
       `
-      )
+  )
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
@@ -68,7 +68,7 @@ function SEO({ description, lang, meta, title }:Props ) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta?meta:[])}
+      ].concat(meta ? meta : [])}
     />
   )
 }

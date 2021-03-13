@@ -57,8 +57,7 @@ const IndexPage = () => {
   });
 
   return <Layout>
-    <SEO title="Felipe Castells"/>
-    <Header/>
+    <SEO title="Felipe Castells" />
     {projects}
 
   </Layout>

@@ -1,16 +1,22 @@
 @import "./vars";
-.layout{
-    padding:4rem;
-    width:100%;
-    min-height:100vh;
+
+html{
+    background:$secondary;
 }
-@media (min-width: 960px) { 
-    .layout{
-        margin:0 auto;
+.layout {
+    padding: 4rem;
+    width: 100%;
+    min-height: 100vh;
+    background:none;
+}
+
+@media (min-width: 960px) {
+    .layout {
+        margin: 0 auto;
         max-width: 960px;
-        min-height: 99vh;
-        padding:4rem;
-        border-left: 1px solid #bebebeaa;
-        border-right: 1px solid #bebebeaa; 
+        min-height: 100vh;
+        padding: 4rem;
+        border-left: 1px solid $light_gray+aa;
+        border-right: 1px solid $light_gray+aa;
     }
-} 
+}

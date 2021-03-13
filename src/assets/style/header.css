@@ -26,11 +26,11 @@ header .title {
 
 header .title p {
   margin: 0;
-  font-family: "Roboto",Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 header .title p:last-child {
-  font-family: "Roboto Bold",Arial, Helvetica, sans-serif;
+  font-family: "Roboto Bold", Arial, Helvetica, sans-serif;
 }
 
 header .tag {

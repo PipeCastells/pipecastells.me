@@ -1,42 +1,48 @@
 @import "./vars";
-header{
+
+header {
     overflow: hidden;
     justify-content: space-around;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2rem;
-    width:100%;
+    width: 100%;
 
-    .title{
+    .title {
         text-align: center;
         font-size: $mobile-big;
         letter-spacing: .65rem;
         white-space: nowrap;
         margin-bottom: 0.5rem;
-        p{
-            margin:0;
-            font-family: "Roboto",Arial, Helvetica, sans-serif;
-            &:last-child{
-                font-family: "Roboto Bold",Arial, Helvetica, sans-serif;
+
+        p {
+            margin: 0;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+            &:last-child {
+                font-family: "Roboto Bold", Arial, Helvetica, sans-serif;
             }
         }
     }
-    .tag{
+
+    .tag {
         text-align: center;
         font-size: $mobile-big;
-        
-        margin:0;
+
+        margin: 0;
         text-align: center;
-        float:none;
+        float: none;
         font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
-        p{
+
+        p {
             font-size: $mobile-small;
-            margin:0 !important;
-            padding:0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
             white-space: nowrap;
-            &:first-child{
+
+            &:first-child {
                 font-weight: bold;
             }
         }
@@ -44,38 +50,42 @@ header{
 }
 
 @media (max-width: $small-phone-size) {
-    header{
+    header {
         overflow: unset;
     }
-  }
-  @media (min-width: $tablet-size) { 
-      header{
-            overflow:hidden;
-            justify-content: space-around;
-            margin-bottom: 3.5rem;
-            display: block;
-          .title{
-            float:left;
-            p{
+}
+
+@media (min-width: $tablet-size) {
+    header {
+        overflow: hidden;
+        justify-content: space-around;
+        margin-bottom: 3.5rem;
+        display: block;
+
+        .title {
+            float: left;
+
+            p {
                 font-size: $desktop-big;
                 letter-spacing: .65rem;
                 font-size: 1.5rem;
                 text-align: left;
-                margin:0;
-                padding:0;
+                margin: 0;
+                padding: 0;
             }
-          }
-          .tag{
-              display: block;
-                float:right;
-                text-align: right;
+        }
 
-              p{
+        .tag {
+            display: block;
+            float: right;
+            text-align: right;
+
+            p {
                 font-size: $desktop-small;
                 text-align: right;
-                margin:0;
-                padding:0;
-              }
-          }
-      }
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
 }

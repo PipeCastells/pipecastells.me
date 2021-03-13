@@ -21,6 +21,7 @@
 
 .project .project_info {
   font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+  color: black;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -42,7 +43,7 @@
 .project .project_info .using {
   width: 100%;
   list-style: none;
-  border-left: 1px solid #64646464;
+  border-left: 1px solid #a4a4a4;
   margin-left: 0;
 }
 
