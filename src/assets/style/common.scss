@@ -31,7 +31,7 @@
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
     text-decoration: none;
     color:black;
-    font-size: $mobile-subtitle;
+    font-size: $mobile-medium;
     width:5.25rem;
 }
 
@@ -39,4 +39,11 @@
     color:white;
     background:black;
     cursor: pointer;
+}
+
+@media (min-width: $tablet-size) { 
+    .link{
+        font-size: $desktop-small !important;
+        width:6rem !important; 
+    }
 }

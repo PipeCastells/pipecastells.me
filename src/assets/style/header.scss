@@ -6,12 +6,12 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
     width:100%;
 
     .title{
         text-align: center;
-        font-size: $mobile-title;
+        font-size: $mobile-big;
         letter-spacing: .65rem;
         white-space: nowrap;
         margin-bottom: 0.5rem;
@@ -25,19 +25,57 @@ header{
     }
     .tag{
         text-align: center;
+        font-size: $mobile-big;
         
         margin:0;
         text-align: center;
         float:none;
         font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
         p{
+            font-size: $mobile-small;
             margin:0 !important;
             padding:0 !important;
-            font-size: $mobile-subtitle;
             white-space: nowrap;
             &:first-child{
                 font-weight: bold;
             }
         }
     }
+}
+
+@media (max-width: $small-phone-size) {
+    header{
+        overflow: unset;
+    }
+  }
+  @media (min-width: $tablet-size) { 
+      header{
+            overflow:hidden;
+            justify-content: space-around;
+            margin-bottom: 3.5rem;
+            display: block;
+          .title{
+            float:left;
+            p{
+                font-size: $desktop-big;
+                letter-spacing: .65rem;
+                font-size: 1.5rem;
+                text-align: left;
+                margin:0;
+                padding:0;
+            }
+          }
+          .tag{
+              display: block;
+                float:right;
+                text-align: right;
+
+              p{
+                font-size: $desktop-small;
+                text-align: right;
+                margin:0;
+                padding:0;
+              }
+          }
+      }
 }

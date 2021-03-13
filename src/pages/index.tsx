@@ -23,8 +23,9 @@ const IndexPage = () => {
               thumbnail {
                 childImageSharp {
                   gatsbyImageData(
-                    width: 200
-                    placeholder: BLURRED
+                    quality: 75
+                    width: 800
+                    placeholder: TRACED_SVG
                     formats: [AUTO, WEBP, AVIF]
                   )
                 }
@@ -44,6 +45,7 @@ const IndexPage = () => {
     }
     return (
       <Project
+        key={node.frontmatter.url}
         title={node.frontmatter.title}
         thumbnail={node.frontmatter.thumbnail}
         using={node.frontmatter.using}

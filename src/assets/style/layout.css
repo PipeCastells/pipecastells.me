@@ -3,4 +3,15 @@
   width: 100%;
   min-height: 100vh;
 }
+
+@media (min-width: 960px) {
+  .layout {
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 99vh;
+    padding: 4rem;
+    border-left: 1px solid #bebebeaa;
+    border-right: 1px solid #bebebeaa;
+  }
+}
 /*# sourceMappingURL=layout.css.map */

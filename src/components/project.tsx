@@ -1,6 +1,7 @@
 import { GatsbyImage,getImage } from "gatsby-plugin-image"
 import React from "react"
 import Link from "./link"
+import "../assets/style/project.css"
 interface ProjectInterface {
     title: string
     thumbnail: any
@@ -32,20 +33,19 @@ const ProjectCard = ({
             />
           )}
   
-          <ul>
+          <ul className="using">
             {using.map(s => {
-              return <li>{s}</li>
+              return <li key={s}>{s}</li>
             })}
           </ul>
         </div>
   
         <div className="links">
           {url && (
-            <Link url={url}>CODE</Link>
-
+            <><Link url={url}>WEBSITE</Link></>
           )}
           {repo && (
-            <Link url={repo}>CODE</Link>
+            <><Link url={repo}>CODE</Link></>
           )}
         </div>
       </div>

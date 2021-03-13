@@ -31,7 +31,7 @@
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
   text-decoration: none;
   color: black;
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   width: 5.25rem;
 }
 
@@ -39,5 +39,12 @@
   color: white;
   background: black;
   cursor: pointer;
+}
+
+@media (min-width: 620px) {
+  .link {
+    font-size: 0.75rem !important;
+    width: 6rem !important;
+  }
 }
 /*# sourceMappingURL=common.css.map */

@@ -1,0 +1,157 @@
+@import "./vars";
+
+.project{ 
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    .thumbnail{
+        padding: .5rem;
+        outline: 1px solid #64646464;
+        outline-offset: 0;
+        margin:.1rem;
+        margin-bottom: 1rem;
+    }
+    .title{
+        color:#454545;
+        font-size: $mobile-big;
+        letter-spacing: .2rem;
+        margin-bottom: $mobile-big;
+    }
+    .project_info{ 
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+
+        flex-direction: column;
+        display: flex;
+        text-align: left;
+    
+        .description{ 
+            text-align: left;
+            font-size: $mobile-small;
+            line-height: $mobile-medium;
+            width:100%;
+            margin-bottom: 0;
+        }
+        .using{
+            width:100%;
+            list-style: none;
+            border-left: 1px solid #64646464;
+            margin-left:0;
+            li{ 
+
+                margin:0;
+                padding:0;
+                vertical-align: baseline;
+                margin-left: .5rem;
+                font-size: $mobile-small;
+                line-height: 1rem;
+            }
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        a{
+            &:last-child{
+                margin-top: 1rem;
+            }
+            button{
+                width:100%;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        }
+    }
+}
+
+@media (max-width: $small-phone-size) {
+    *{
+    }
+  }
+  @media (min-width: $small-phone-size) {
+    .project{
+        .links{
+            flex-direction: row;
+            a{
+                button{
+                    font-size: .65rem;
+                    width:5.25rem;
+                }
+                &:last-child{
+                    margin-top: 0rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+  }
+  @media (min-width: $phone-size) { 
+    .description{
+        display: flex;
+        text-align: left;
+        font-size: $mobile-small;
+        line-height: $mobile-medium;
+        width:70% !important;
+        margin-bottom: 0;
+        float:left;
+        margin:0;
+        padding:0;
+    }
+    .links{
+        margin-left: .5rem !important;
+    }
+    
+  }
+  @media (min-width: $tablet-size) {  
+    .description{
+        display: flex;
+        text-align: left;
+        font-size: $desktop-small!important;
+        line-height: $desktop-medium!important;
+        width:70% !important;
+        margin-bottom: 0;
+        float:left;
+        margin:0;
+        padding:0;
+    }
+    .links{
+        margin-left: .5rem !important;
+    }
+    .project{
+        .title{
+            font-size: $desktop-big !important;
+        }
+    }
+    .project_info{ 
+        flex-direction: row !important;
+        display: flex;
+        text-align: left;
+        .description{
+            p{
+                font-size: $desktop-medium;
+                line-height: 1.45rem !important;
+            }
+        }
+        
+        .using{
+                width:30% !important;
+                list-style: none;
+                border-left: 1px solid #64646464;
+                margin-left:0.5rem !important;
+                display: inline-block;
+                align-self: start;
+                li{ 
+                    margin:0;
+                    padding:0;
+                    vertical-align: baseline;
+                    margin-left: .5rem;
+                    font-size: $desktop-medium !important;
+                    line-height: 1.45rem !important;
+                }
+        }
+    
+    }
+    
+  }
